@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  BearOCR
+//
+//  Created by zly on 2019/5/8.
+//  Copyright © 2019 zly. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __cplusplus
+#include <opencv2/opencv.hpp>
+#endif
+
+#endif /* PrefixHeader_pch */

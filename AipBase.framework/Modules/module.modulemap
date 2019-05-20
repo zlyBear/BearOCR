@@ -1,0 +1,6 @@
+framework module AipBase {
+  umbrella header "AipBase.h"
+
+  export *
+  module * { export * }
+}
