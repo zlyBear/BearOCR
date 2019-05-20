@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		18756A63228025AD003B422B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18756A62228025AD003B422B /* AppDelegate.swift */; };
-		18756A65228025AD003B422B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18756A64228025AD003B422B /* ViewController.swift */; };
 		18756A68228025AD003B422B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18756A66228025AD003B422B /* Main.storyboard */; };
 		18756A6A228025AF003B422B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18756A69228025AF003B422B /* Assets.xcassets */; };
 		18756A6D228025AF003B422B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18756A6B228025AF003B422B /* LaunchScreen.storyboard */; };
@@ -57,7 +56,6 @@
 		10BAEDD7017CE94A8CD13DB9 /* Pods-BearOCR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BearOCR.release.xcconfig"; path = "Target Support Files/Pods-BearOCR/Pods-BearOCR.release.xcconfig"; sourceTree = "<group>"; };
 		18756A5F228025AD003B422B /* BearOCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BearOCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18756A62228025AD003B422B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18756A64228025AD003B422B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18756A67228025AD003B422B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18756A69228025AF003B422B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18756A6C228025AF003B422B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -130,12 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				18756AA92282D23F003B422B /* OpenCV */,
-				18756A8C2281970E003B422B /* lib */,
 				18756A89228036C4003B422B /* Utils */,
 				18756A87228033F1003B422B /* tessdata */,
-				18756A8222803216003B422B /* Word */,
 				18756A62228025AD003B422B /* AppDelegate.swift */,
-				18756A64228025AD003B422B /* ViewController.swift */,
+				18756A832280327E003B422B /* WordOCRViewController.swift */,
 				18756A66228025AD003B422B /* Main.storyboard */,
 				18756A69228025AF003B422B /* Assets.xcassets */,
 				18756A6B228025AF003B422B /* LaunchScreen.storyboard */,
@@ -153,27 +149,11 @@
 			path = BearOCRTests;
 			sourceTree = "<group>";
 		};
-		18756A8222803216003B422B /* Word */ = {
-			isa = PBXGroup;
-			children = (
-				18756A832280327E003B422B /* WordOCRViewController.swift */,
-			);
-			path = Word;
-			sourceTree = "<group>";
-		};
 		18756A89228036C4003B422B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		18756A8C2281970E003B422B /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				18756A8F2281970E003B422B /* IdcardQuality.framework */,
-			);
-			path = lib;
 			sourceTree = "<group>";
 		};
 		18756AA92282D23F003B422B /* OpenCV */ = {
@@ -204,6 +184,7 @@
 				18756AA72282D1B8003B422B /* opencv2.framework */,
 				18756A9F2281A9BA003B422B /* AipBase.framework */,
 				18756A9E2281A9BA003B422B /* AipOcrSdk.framework */,
+				18756A8F2281970E003B422B /* IdcardQuality.framework */,
 				FE2C478009581AB2B3757D96 /* Pods_BearOCR.framework */,
 				379615953B6AF21BB3751D7A /* Pods_BearOCRTests.framework */,
 			);
@@ -400,7 +381,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18756A65228025AD003B422B /* ViewController.swift in Sources */,
 				18756A63228025AD003B422B /* AppDelegate.swift in Sources */,
 				18756AAD2282D2FA003B422B /* OpenCVWrapper.mm in Sources */,
 				18756A852280327E003B422B /* WordOCRViewController.swift in Sources */,
